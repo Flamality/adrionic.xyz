@@ -1,0 +1,167 @@
+.youtubeTop {
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+  }
+  
+  .ytLogoPng {
+    filter: brightness(0) invert(1);
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  
+  .ytMain {
+    margin-top: 200px;
+  }
+  
+  .youtubeHeaderImg {
+    height: 100%;
+    width: 25%;
+    float: left;
+    transform: scaleX(-1);
+    border-radius: 100%;
+    margin-left: 5%;
+  }
+  
+  #thumbnail-img {
+    width: 40%;
+    float: right;
+    border-radius: 20px;
+    box-shadow: var(--card) 5px 5px 15px 15px;
+    transition: transform .2s ease;
+    margin-right: 5%;
+  }
+  
+  #thumbnail-img:hover {
+    transform: translateY(-10px);
+  }
+  .curve-container {
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .curve-container2 {
+    position: relative;
+    margin-top: 100px;
+  }
+  .ytCurve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: var(--Discord);
+  }
+  .ytCurve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+  }
+  .ytCurve .shape-fill {
+    fill: #1C1C24;
+  }
+  
+  .ytCurve2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: var(--Discord);
+    transform: rotate(180deg) translateY(110px);
+  }
+  
+  .yrCurve2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+  }
+  
+  .ytCurve2 .shape-fill {
+    fill: #1C1C24;
+  }
+  .yt-section {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: var(--Discord);
+  }
+  
+  .videoWall {
+    width: 650px;
+    max-width: 90%;
+    margin: 20px 50px;
+    border-radius: 20px;
+    box-shadow: var(--card) 5px 5px 15px 15px;
+    transition: transform .4s ease-in-out; /* Only transition the transform property */
+  }
+  .videoWall:hover {
+    transform: perspective(200px) rotateY(-2deg) skew(-2deg);
+  }
+  .youtubePgLink {
+    color: var(--white-color)
+  }
+  .youtubePgLink:hover {
+    color: var(--Text)
+  }
+  
+  
+  .youtube-members {
+    margin-top: 10px;
+  }
+  .youtube-members h2 {
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .learn-more {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .members-desc {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .learn-more-a {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--Discord);
+    color: white;
+    border-radius: 5px;
+    transition: all .1s ease;
+  }
+  .learn-more-a:hover {
+    opacity: 0.75;
+    color: var(--white-color);
+  }
+  .member-perks li {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: #fff 1px solid;
+  }
+  .member-perks li:last-child {
+    border-bottom: none;
+  }
+  .member-perks li:hover {
+    transform: translateY(0px);
+  }
+  .youtube-members h3 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }

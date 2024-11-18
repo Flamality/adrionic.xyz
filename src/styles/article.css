@@ -1,0 +1,229 @@
+.sidebar {
+    margin-left: 125px;
+    margin-right: 20px;
+    margin-top: 50px;
+    float: left;
+    width: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card);
+    border-radius: 8px;
+  }
+
+  #articlesSidebar {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  #articlesSidebar :last-child {
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 26px;
+    margin: 40px 0px 5px 0px;
+  }
+  #articlesSidebar p {
+    background-color: var(--transparent);
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px 0;
+  }
+  
+  
+  #articlesSidebar a {
+    color: var(--white-color);
+    background-color: var(--transparent);
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px 0;
+  }
+  .sidebar a:hover {
+    background-color: var(--card);
+  }
+  .sidebarTitle {
+    margin: 15px 0px 10px 0px;
+  }
+  
+  .sideHeader {
+    background-color: var(--transparent);
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    margin: 16px 0px 8px 0px;
+  }
+  .CurrentArticle {
+    background-color: var(--card);
+  }
+  .dropdownButton {
+    display: none;
+  }
+  .dropdownButtonFull {
+    display: none;
+  }
+  .dropdownPlus {
+    text-align: left;
+  }
+  .articleContent p, .articleContent h2 {
+    text-align: left;
+    margin: 0;
+  }
+  .articleTitle h1 {
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  
+  .authorContent {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 8px;
+    margin-left: 10px;
+  }
+  .authorContent p {
+    color: var(--white-color);
+    font-size: 20px;
+    margin: 0 5px;
+    text-align: left;
+  }
+  .timestamp {
+    text-align: left;
+    margin: 10px;
+  }
+  .articlehr {
+    border: none;
+    height: 2px;
+    margin: 20px;
+    margin-right: 125px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), var(--white-color), var(--white-color), var(--white-color), rgba(255, 255, 255, 0));
+  }
+  .authorContent img {
+    width: 40px;
+    border-radius: 100%;
+  }
+  .articleContent {
+    margin-right: 125px;
+    margin-left: 295px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .dropdownButton {
+      display:block;
+      text-align: center;
+      background-color: var(--card);
+      padding: 10px 0;
+      margin: auto;
+      margin-top: 10px;
+      margin-left: 25px;
+      margin-right: 25px;
+      border-radius: 5px;
+    }
+    .dropdownButtonFull {
+      display: block;
+    }
+    .articleTitle h1 {
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+    .sidebar.active {
+      display: flex;
+      border: none;
+    }
+    #articlesSidebar {
+      height: 200px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      margin: 0 0;
+      width: 80%;
+      background-color: var(--card);
+    }
+    #articlesSidebar p {
+      background-color: var(--card);
+      padding: 8px 0;
+      width: 100%;
+      border-radius: 5px;
+      text-align: center;
+      margin: 0px 0;
+    }
+    .sidebar {
+      margin-top: 20px;
+      margin: auto;
+      float: none;
+      width: auto;
+      width: 100%;
+      height: auto;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--Discord-hover);
+      border-radius: 10px;
+      border: var(--card) 1px solid;
+    }
+    h4 {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+    .sidebarTitle {
+     background-color: var(--card);
+     margin: 0;
+     width: 80%;
+     text-align: center;
+     padding: 5px 0px 5px 0px
+    }
+    .articleContent {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .sidebar p {
+      background-color: var(--transparent);
+      padding: 5px 0;
+      width: 100%;
+      border-radius: 5px;
+      text-align: center;
+      margin: 0px 0;
+    }
+    
+    
+    .sidebar a {
+      color: var(--white-color);
+    }
+    .sidebar p:hover {
+      background-color: var(--card);
+    }
+    
+    .sideHeader {
+      background-color: var(--transparent);
+      padding: 5px;
+      width: 100%;
+      font-size: 1em;
+      border-radius: 5px;
+      text-align: center;
+      margin: 2px 0;
+      margin-bottom: 0px;
+    }
+    .currentArticle {
+      background-color: var(--card);
+    }
+    .articlehr {
+      border: none;
+      height: 2px;
+      margin: 20px;
+      margin-right: 10px;
+      margin-left: 10px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), var(--white-color), var(--white-color), var(--white-color), rgba(255, 255, 255, 0));
+    }
+  
+  
+   
+  
+  }

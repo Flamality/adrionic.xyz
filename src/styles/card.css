@@ -1,0 +1,204 @@
+.card {
+  width: 175px;
+  height: 200px;
+  background-color: var(--card);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all .3s ease;
+  cursor: default;
+  margin: 0px 20px;
+}
+.navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  width: 80px; /* Adjust size of logo */
+  transition: transform .4s ease; /* Only transition the transform property */
+}
+
+.card:hover img {
+  transform: perspective(500px) rotateY(30deg) skew(10deg);
+}
+
+.card:nth-child(1):hover img {
+  filter: invert(52%) sepia(90%) saturate(6500%) hue-rotate(339deg) brightness(95%) contrast(100%);
+}
+.card:nth-child(2):hover img {
+  filter: invert(52%) sepia(90%) saturate(4984%) hue-rotate(223deg) brightness(97%) contrast(96%);
+}
+.card:nth-child(3):hover img {
+  filter: invert(90%) sepia(39%) saturate(881%) hue-rotate(90deg) brightness(700%) contrast(80%);
+}
+
+.card h2 {
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  transition: all .1s;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card button {
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  padding: 10px 20px;
+  transform: translateY(-10px);
+  background-color: var(--transparent);
+  color: var(--transparent);
+  border: var(--transparent) 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease, transform .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+.card:nth-child(1):hover h2 {
+  color: var(--Youtube);
+}
+.card:nth-child(2):hover h2 {
+  color: var(--Discord);
+}
+.card:nth-child(3):hover h2 {
+  color: var(--Socials);
+}
+.card:nth-child(1):hover button {
+  border: var(--Youtube) 3px solid;
+  background-color: var(--Youtube);
+}
+.card:nth-child(2):hover button {
+  border: var(--Discord) 3px solid;
+  background-color: var(--Discord);
+}
+.card:nth-child(3):hover button {
+  border: var(--Socials) 3px solid;
+  background-color: var(--Socials);
+}
+.card:nth-child(1):hover button:hover {
+  background-color: var(--transparent);
+  color: var(--Youtube);
+}
+.card:nth-child(2):hover button:hover {
+  background-color: var(--transparent);
+  color: var(--Discord);
+}
+.card:nth-child(3):hover button:hover {
+  background-color: var(--transparent);
+  color: var(--Socials);
+}
+
+.card:hover button {
+  opacity: 1; /* Make visible */
+  visibility: visible; /* Make visible */
+  color: #fff;
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card {
+    margin: 5px 0px 5px 0px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+  }
+  .card img {
+    transform: perspective(500px) rotateY(30deg) skew(10deg);
+  }
+  .card:hover {
+    transform: translateY(0px);
+  }
+  
+  .card:nth-child(1) img {
+    filter: invert(52%) sepia(90%) saturate(6500%) hue-rotate(339deg) brightness(95%) contrast(100%);
+  }
+  .card:nth-child(2) img {
+    filter: invert(52%) sepia(90%) saturate(4984%) hue-rotate(223deg) brightness(97%) contrast(96%);
+  }
+  .card:nth-child(3) img {
+    filter: invert(90%) sepia(39%) saturate(881%) hue-rotate(90deg) brightness(700%) contrast(80%);
+  }
+
+  .card h2 {
+    transform: scale(1);
+  }
+  
+  .card:nth-child(1) h2 {
+    color: var(--Youtube);
+  }
+  .card:nth-child(2) h2 {
+    color: var(--Discord);
+  }
+  .card:nth-child(3) h2 {
+    color: var(--Socials);
+  }
+  .card:nth-child(1) {
+    background-color: var(--card);
+  }
+  .card:nth-child(2) {
+    background-color: var(--card);
+  }
+  .card:nth-child(3) {
+    background-color: var(--card);
+  }
+
+  .card:hover h2 {
+    transform: scale(1);
+  }
+  
+  .card:nth-child(1):hover h2 {
+    color: var(--Youtube);
+  }
+  .card:nth-child(2):hover h2 {
+    color: var(--Discord);
+  }
+  .card:nth-child(3):hover h2 {
+    color: var(--Socials);
+  }
+  .card:hover button {
+    display: block;
+    background-color: var(--adrian-blue);
+    border: var(--adrian-blue) 2px solid;
+    color: var(--white-color);
+    transform: translateY(0px);
+  }
+  .card button:hover {
+    background-color: var(--adrian-blue);
+    color: var(--adrian-blue);
+  }
+  
+  .card button {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    background-color: var(--adrian-blue);
+    border: var(--adrian-blue) 2px solid;
+    color: var(--white-color);
+    transform: translateY(0px);
+  }
+  .card:nth-child(1) button {
+    border: var(--Youtube) 3px solid;
+    background-color: var(--Youtube);
+  }
+  .card:nth-child(2) button {
+    border: var(--Discord) 3px solid;
+    background-color: var(--Discord);
+  }
+  .card:nth-child(3) button {
+    border: var(--Socials) 3px solid;
+    background-color: var(--Socials);
+  }
+}

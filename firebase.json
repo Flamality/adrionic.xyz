@@ -1,0 +1,92 @@
+{
+  "hosting": {
+    "public": "src",
+    "rewrites": [
+      {
+        "source": "/home",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/youtube",
+        "destination": "/youtube.html"
+      },
+      {
+        "source": "/discord",
+        "destination": "/discord.html"
+      },
+      {
+        "source": "/socials",
+        "destination": "/socials2.html"
+      },
+      {
+        "source": "/discord/staff",
+        "destination": "/discordstaff.html"
+      },
+      {
+        "source": "/discord/rules",
+        "destination": "/discordrules.html"
+      },
+      {
+        "source": "/discord/staff/guidelines",
+        "destination": "/staffguidelines.html"
+      },
+      {
+        "source": "/youtube/guidelines",
+        "destination": "/chatguidelines.html"
+      },
+      {
+        "source": "/discord/staff/apply",
+        "destination": "/modapps.html"
+      },
+      {
+        "source": "/link/discord",
+        "destination": "/linkdiscord.html"
+      },
+      {
+        "source": "/link/youtube",
+        "destination": "/linkyoutube.html"
+      },
+      {
+        "source": "/link/instagram",
+        "destination": "/linkinstagram.html"
+      },
+      {
+        "source": "/link/twitter",
+        "destination": "/linktwitter.html"
+      },
+      {
+        "source": "/link/tiktok",
+        "destination": "/linktiktok.html"
+      },
+      {
+        "source": "/link/facebook",
+        "destination": "/linkfacebook.html"
+      },
+      {
+        "source": "/discord/auth",
+        "destination": "/discordauth.html"
+      },
+      {
+        "source": "/feedback",
+        "destination": "/feedback.html"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ]
+}

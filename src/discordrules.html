@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onic Club - Rules</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/article.css">
+    <link rel="icon" type="image/png" href="adrionicPFP.jpg">
+</head>
+<body>
+<!--Page type: Articles-->
+<nav>
+    <a href="/home">Home</a>
+    <a href="/youtube">Youtube</a>
+    <a href="/discord">Discord</a>
+    <a href="/socials">Socials</a>
+</nav>
+<div class="PageContent">
+<!--Articles-->
+<div class="dropdownButtonFull">
+  <p class="dropdownButton">Articles</p>
+</div>
+<div class="sidebar">
+  <h5 class="sidebarTitle">Articles</h5>
+  <div id="articlesSidebar">
+    <h6 class="sideHeader">Onic Club</h6>
+      <p class="currentArticle"><a href="/discord/rules">Rules</a></p>
+      <p><a href="/youtube/guidelines">Guidelines</a></p>
+    <h6 class="sideHeader">Staff</h6>
+      <p><a href="/discord/staff">Staff page</a></p>
+      <p><a href="/discord/staff/guidelines">Moderator Guidelines</a></p>
+      <p><a href="/discord/staff/apply">Staff Apps</a></p>
+  </div>
+</div>
+<!--Article info-->
+<div class="articleTitle">
+    <h1>Onic Club Rules</h1>
+</div>
+<div class="authorContent">
+  <img src="PrideF.jpg">
+  <p class="author">Flamality</p>
+</div>
+<p class="timestamp">Last updated</p>
+
+<hr class="articlehr">
+<!--Article-->
+<div class="articleContent">
+<h2>Rules</h2>
+        <h4>Rule #1 - Personal Info</h4>
+        <p>Do not post highly personal information on this server, such as home addresses, phone numbers, or anything that may allow someone to find your location, contact your personal devices, or somehow access your personal internet accounts.</p>
+        <h4>Rule #2 - Be Respectful</h4>
+        <p>Harassment, personal attacks, bullying, and anything of the sort will not be tolerated. If someone states they're uncomfortable with something you're saying to them and asks you to stop, please respect their wishes. Repeat violations will ultimately result in a permanent ban.</p>
+
+        <h4>Rule #3 - Controversial Topics</h4>
+        <p>Talking about notoriously controversial topics is not allowed on this server. This includes discussions involving politics, religion, or anything else that could lead to an argument. This server is meant to be a place where we come together and have fun, and celebrate our similarities rather than argue about our differences.</p>
+
+        <h4>Rule #4 - No NSFW Content</h4>
+        <p>Age-restricted or obscene content is not allowed on this server. This includes text, images, or links featuring mild to graphic depictions of nudity, sex, hard violence, or other visually disturbing content.</p>
+
+        <h4>Rule #5 - Self Promotion</h4>
+        <p>No spam or self-promotion in any channel other than the dedicated "promote-yourself" channel. This includes DMing fellow members. There is a dedicated channel for this, so keep all self-promotion to that channel. (Server invites are not allowed in ANY channel)</p>
+
+        <h4>Rule #6 - Moderation Team</h4>
+        <p>If you see something against the rules or something that makes you feel unsafe, let a moderator know. We want this server to be a welcoming space for everyone, and we can all help to do that by holding each other accountable. Moderators are here to keep things running smoothly on the server, and have the ability to mute, suspend, or ban if needed. Please treat them with respect.</p>
+
+        <h4>Rule #7 - Spam</h4>
+        <p>Do not spam any channel with text, emojis, images, links, or anything else. Violation of this rule will result in a warning, and if ignored, a suspension. Subsequent violations will result in a permanent ban.</p>
+
+        <h4>Rule #8 - Duplicate Accounts</h4>
+        <p>Only one account is allowed on this server per person. Violation of this rule will result in suspension, and ultimately a permanent ban.</p>
+
+        <h4>Rule #9 - Roles</h4>
+        <p>Requesting access to both Moderator and YouTube Member roles is not allowed. Moderator applications will be clearly announced when they are open, and removed when they are closed. YouTube Member roles can only be accessed directly through Adrionic, and will be given upon confirmation of YouTube Membership status.</p>
+
+        <h4>Rule #10 - Channels</h4>
+        <p>Make sure to keep conversations for specific topics in the dedicated channels. For example, all explicitly food-related conversations, images, etc. are to be kept in the food chat channel. Bans will not be given for the occasional off-topic post in most channels, but deliberately malicious off-topic posting will ultimately be met with a ban.</p>
+
+        <h4>Rule #11 - Discord TOS</h4>
+        <p>You must adhere to Discord's Terms Of Service and Community Guidelines. Links for these can be found below:<br>
+        <a href="https://discord.com/terms">Discord TOS</a><br>
+        <a href="https://discord.com/guidelines">Community Guidelines</a>
+        </p>
+    <h4>Extra</h4>
+    <p>If you encounter anyone breaking these rules report them by creating a ticket in the <code>#🎫-tickets-🎫</code> channel!</p>
+    <p>Also check out the chat guidelines!</p>
+    
+</div>
+<footer>
+    <div class="footerSocials">
+        <a href="/link/youtube">
+          <img src="ytWhite.png">
+        </a>
+        <a href="/link/discord">
+          <img src="dcWhite.png">
+        </a>
+        <a href="/link/tiktok">
+          <img src="tiktok.png">
+        </a>
+        <a href="/link/instagram">
+          <img src="instagram.png">
+        </a>
+        <a href="/link/twitter">
+          <img src="x.png">
+        </a>
+        <a href="/link/facebook">
+          <img src="facebook.png">
+        </a>
+    </div>
+  </div>
+  </footer>
+<div class="feedback-text">
+  <p>Want to improve this site? Submit feedback <a href="/feedback">here</a></p>
+</div>
+<script>
+    document.addEventListener('click', function(e) {
+      if (!e.target.matches('.dropdownButtonFull')) {
+        var dropdowns = document.getElementsByClassName("dropdownContent");
+        for (var d = 0; d < dropdowns.length; d++) {
+          var openDropdown = dropdowns[d];
+          if (openDropdown.classList.contains('active')) {
+            openDropdown.classList.remove('active');
+          }
+        }
+      }
+    });
+
+    document.querySelectorAll('.dropdownButtonFull').forEach(function(dropdown) {
+      dropdown.addEventListener('click', function() {
+        var dropdownContent = this.nextElementSibling;
+        dropdownContent.classList.toggle('active');
+      });
+    });
+  </script>
+  <script>
+    // Function to update timestamps
+    function updateTimestamps() {
+      // Get all elements with the class "timestamp"
+      var timestamps = document.querySelectorAll('.timestamp');
+  
+      // Loop through each timestamp element
+      timestamps.forEach(function(timestamp) {
+        // Get the specific time to calculate the difference from (for example, you can use a date string or timestamp)
+        var specificTime = new Date('2024-04-07T21:19:00Z');
+  
+        // Calculate the time difference
+        var currentTime = new Date();
+        var timeDifference = currentTime - specificTime;
+  
+        // Convert the time difference to a human-readable format (e.g., seconds, minutes, hours, days)
+        var timeAgo = calculateTimeAgo(timeDifference);
+  
+        // Update the timestamp element's text content
+        timestamp.textContent = 'Last updated • ' + timeAgo + ' ago';
+      });
+    }
+  
+    // Function to calculate time difference in a human-readable format
+    function calculateTimeAgo(milliseconds) {
+      var seconds = Math.floor(milliseconds / 1000);
+      var minutes = Math.floor(seconds / 60);
+      var hours = Math.floor(minutes / 60);
+      var days = Math.floor(hours / 24);
+  
+      if (days > 0) {
+        return days + ' days';
+      } else if (hours > 0) {
+        return hours + ' hours';
+      } else if (minutes > 0) {
+        return minutes + ' minutes';
+      } else {
+        return seconds + ' seconds';
+      }
+    }
+  
+    // Call the updateTimestamps function to initially update timestamps
+    updateTimestamps();
+  
+    // Optionally, you can set up a timer to periodically update timestamps
+    setInterval(updateTimestamps, 600); // Update every minute (adjust as needed)
+  </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrionic - Youtube</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/youtube.css">
+    <link rel="icon" type="image/png" href="adrionicPFP.jpg">
+</head>
+<body>
+
+<nav>
+    <a href="/home">Home</a>
+    <a href="/youtube">Youtube</a>
+    <a href="/discord">Discord</a>
+    <a href="/socials">Socials</a>
+</nav>
+
+<div class="youtubeTop">
+  <img src="ytlogotrans.png" class="ytLogoPng">
+  <!--
+  <div class="ytMain">
+    <img src="adrionicPFP.jpg" class="youtubeHeaderImg">
+    <a href="" id="thumbnail-link"><img id="thumbnail-img" src="maxresdefault.jpg"></a>
+  </div>
+  -->
+</div>
+<div class="curve-container">
+  <div class="ytCurve">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>
+  </div>
+</div>
+<!--
+<script>
+  // Function to fetch the most recent video from a specific YouTube channel
+  function fetchMostRecentVideo(channelId, apiKey) {
+      fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=1&order=date&type=video&key=${apiKey}`)
+      .then(response => response.json())
+      .then(data => {
+          const videoId = data.items[0].id.videoId;
+          const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+          const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+          // Update the HTML with the thumbnail and video link
+          document.getElementById('thumbnail-img').src = thumbnailUrl;
+          document.getElementById('thumbnail-link').href = videoUrl;
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }
+
+  // Call the function with your specific channel ID and API key
+  const channelId = 'UCwkFrWvPdVA3O0zHCeALiMA';
+  //const apiKey = 'AIzaSyBjRHWI6wMD_b_OYUvcU18GGiuZxXj2C4U';
+  fetchMostRecentVideo(channelId, apiKey);
+</script>
+-->
+<div class="yt-section">
+<div class="center">
+  <img class="videoWall" src="AdiranWallEdited.png">
+</div>
+<div class="spacer"></div>
+<h2>Schedule</h2>
+<p><b>Streaming:</b> Every Wednesday at 10pm EST to around 12pm EST</p>
+<p><b>Pre-Stream: </b>Almost every Wednesday at 9pm EST to around 9:45pm EST <b>on Tiktok</b></p>
+<p><b>Videos:</b> ~ 2-4 videos weekly released at 4pm EST</p>
+
+<h2>Notifications</h2>
+<p>Stay in the loop with all the latest updates from Adrian's digital universe by joining the <a href="/discord" class="youtubePgLink">Onic Club</a> Discord server! Our trusty bot, <a class="youtubePgLink" href="https://pingcord.xyz">Pingcord</a>, ensures that you never miss a beat, promptly announcing the release of new YouTube videos and the commencement of live streams as soon as they go live. But that's not all! For those who prefer to receive notifications directly from YouTube, simply subscribe to <a href="/link/youtube" class="youtubePgLink">Adrian's channel</a> and hit the bell icon, then select 'All.' This ensures that you're always in the know, receiving notifications for every new video and live event.
+</p><p>
+As for TikTok, while the platform does offer live notifications, we understand that it can sometimes be glitchy. That's why we make it a priority to keep our Discord community informed whenever Adrian goes live on TikTok. To enable live notifications on TikTok, follow <a href="/link/tiktok" class="youtubePgLink">Adrian's account</a> and click on the bell icon in the upper right corner. Then, navigate to the 'Adrionic's LIVE videos' section and toggle the 'All' option. With this setup, you'll receive notifications every time Adrian goes live, ensuring that you never miss a moment of the action.</p>
+<div class="spacer"></div>
+<!--<div class="curve-container2">
+  <div class="ytCurve2">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+      <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+      <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+  </svg>-->
+  </div>
+</div>
+</div>
+<div class="youtube-members section">
+  <h2>MEMBERS</h2>
+  <p class="members-desc">Join the Corn Cob Club today for awesome perks and to support the channel for a low price of only $2.99 per month!</p>
+  <p class="learn-more"><a href="https://youtube.com/@adrionic/join" class="learn-more-a">Learn more</a></p>
+  <h3>PERKS</h3>
+  <ul class="member-perks">
+    <li>Your name at the end of every video</li>
+    <li>Early access to videos</li>
+    <li>Custom YouTube emojis</li>
+    <li>Priority responce to comments</li>
+    <li>Special YouTube badge</li>
+    <li>Access to the YouTube member discord channels</li>
+    <li>And other features along with more to come!</li>
+  </ul>
+</div>
+<div class="spacer"></div>
+<footer>
+    <div class="footerSocials">
+        <a href="/link/youtube">
+          <img src="ytWhite.png">
+        </a>
+        <a href="/link/discord">
+          <img src="dcWhite.png">
+        </a>
+        <a href="/link/tiktok">
+          <img src="tiktok.png">
+        </a>
+        <a href="/link/instagram">
+          <img src="instagram.png">
+        </a>
+        <a href="/link/twitter">
+          <img src="x.png">
+        </a>
+        <a href="/link/facebook">
+          <img src="facebook.png">
+        </a>
+    </div>
+</footer>
+
+<div class="feedback-text">
+  <p>Want to improve this site? Submit feedback <a href="/feedback">here</a></p>
+</div>
+</body>
+</html>

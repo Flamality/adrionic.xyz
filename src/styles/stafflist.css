@@ -1,0 +1,88 @@
+.member {
+    min-height: 80px;
+    background-color: var(--card);
+    margin-bottom: 10px;
+    padding: 4px 2px;
+    border-radius: 10px;
+    }
+    .memberLeft{
+      margin-left: 0px;
+    }
+    .memberRight{
+      text-align: right;
+    }
+    .memberRight p {
+      text-align: right;
+    }
+    .memberRight div p {
+      text-align: right;
+    }
+    .memberRight img{
+      float: right;
+    }
+    .memberPicture {
+      height: 60px;
+      width: 60px;
+      float: left;
+      margin-top: 10px;
+      margin-right: 4px;
+      margin-left: 4px;
+      border-radius: 100%;
+    }
+    .memberName {
+    font-size: 25px;
+    margin: 0 0;
+    color:white
+    }
+    .memberUser {
+    font-size: 16px;
+    margin: 0 0;
+    color: rgb(173, 173, 173)
+    }
+    .roles {
+    font-size: 18px;
+    margin: 5px 0px;
+    word-wrap: break-word;
+    }
+    .roles span {
+      margin: 5px;
+      display: inline-block;
+      padding: 4px;
+      background-color: #282828;
+      color: var(--white-color);
+      border-radius: 5px;
+    }
+    
+    .owner {
+      border: var(--adrian-blue) 2px solid;
+    }
+    .admin {
+      border: #f1c40f 2px solid;
+    }
+    .hod {
+      border: #d8821f 2px solid;
+    }
+    .srMod {
+      border: #2a4dff 2px solid;
+    }
+    .mod {
+      border: #1a9225 2px solid;
+    }
+    .trMod {
+      border: #c00000 2px solid;
+    }
+    .support {
+      border: #d82892 2px solid;
+    }
+    .eventManager {
+      border: #11806a 2px solid;
+    }
+    .pollManager {
+      border: #2ecc71 2px solid;
+    }
+    .sheriff {
+      border: #5c0000 2px solid;
+    }
+    .staff {
+      border: #5c52c2 2px solid;
+    }

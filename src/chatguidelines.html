@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrionic - Chat Guidelines</title>
+    <link rel="stylesheet" href="styles/article.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="adrionicPFP.jpg">
+</head>
+<body>
+<!--Page type: Articles-->
+<nav>
+    <a href="/home">Home</a>
+    <a href="/youtube">Youtube</a>
+    <a href="/discord">Discord</a>
+    <a href="/socials">Socials</a>
+</nav>
+<div class="PageContent">
+<!--Articles-->
+<div class="dropdownButtonFull">
+  <p class="dropdownButton">Articles</p>
+</div>
+<div class="sidebar">
+  <h5 class="sidebarTitle">Articles</h5>
+  <div id="articlesSidebar">
+    <h6 class="sideHeader">Onic Club</h6>
+      <p class="currentArticle"><a href="/discord/rules">Rules</a></p>
+      <p><a href="/youtube/guidelines">Guidelines</a></p>
+    <h6 class="sideHeader">Staff</h6>
+      <p><a href="/discord/staff">Staff page</a></p>
+      <p><a href="/discord/staff/guidelines">Moderator Guidelines</a></p>
+      <p><a href="/discord/staff/apply">Staff Apps</a></p>
+  </div>
+</div>
+<!--Article info-->
+<div class="articleTitle">
+    <h1>Onic Club Staff Resources</h1>
+</div>
+<div class="authorContent">
+  <img src="PrideF.jpg">
+  <p class="author">Flamality</p>
+</div>
+<p class="timestamp">Last updated</p>
+
+<hr class="articlehr">
+<!--Article-->
+<div class="articleContent">
+    <h3>What do the guidelines apply to?</h3>
+    <p>These guidelines apply to all chat / comment system in the Adrionic community including Youtube comments / live chat, Onic Club Discord server, and tiktok comments / live chat</p>
+    <h3>Guidelines</h3>
+    <h4>1. Be Respectful</h4>
+<p>Treat others with kindness, respect, and empathy. Avoid offensive language, personal attacks, and discriminatory behavior.</p>
+
+<h4>2. Stay on Topic</h4>
+<p>Keep the conversation relevant to the current context or topic. Avoid derailing discussions with unrelated subjects.</p>
+
+<h4>3. Listen Actively</h4>
+<p>Pay attention to what others are saying and show interest in their viewpoints. Avoid dominating the conversation or interrupting others excessively.</p>
+
+<h4>4. Provide Constructive Feedback</h4>
+<p>Offer feedback in a constructive and respectful manner. Focus on the issue at hand rather than attacking the person.</p>
+
+<h4>5. Be Patient</h4>
+<p>Allow others time to express themselves and respond. Avoid rushing or pressuring others to respond immediately.</p>
+
+<h4>6. Respect Privacy</h4>
+<p>Avoid sharing personal or sensitive information about yourself or others without consent. Respect the privacy of others in the chat.</p>
+
+<h4>7. Use Appropriate Language</h4>
+<p>Choose your words carefully and avoid using offensive, vulgar, or inappropriate language.</p>
+
+<h4>8. Be Open-Minded</h4>
+<p>Be open to different perspectives, opinions, and ideas. Engage in meaningful dialogue and be willing to consider alternative viewpoints.</p>
+
+<h4>9. Report Abuse</h4>
+<p>If you encounter abusive or inappropriate behavior in the chat, report it to the appropriate moderator or authority.</p>
+
+<h4>10. Follow Chat Rules</h4>
+<p>Familiarize yourself with any specific rules or guidelines for the chat platform or community and abide by them.</p>
+<div class="spacer"></div>
+</div>
+<footer>
+    <div class="footerSocials">
+        <a href="/link/youtube">
+          <img src="ytWhite.png">
+        </a>
+        <a href="/link/discord">
+          <img src="dcWhite.png">
+        </a>
+        <a href="/link/tiktok">
+          <img src="tiktok.png">
+        </a>
+        <a href="/link/instagram">
+          <img src="instagram.png">
+        </a>
+        <a href="/link/twitter">
+          <img src="x.png">
+        </a>
+        <a href="/link/facebook">
+          <img src="facebook.png">
+        </a>
+    </div>
+  </div>
+  </footer>
+<div class="feedback-text">
+  <p>Want to improve this site? Submit feedback <a href="/feedback">here</a></p>
+</div>
+</body>
+</html>
+<script>
+    document.addEventListener('click', function(e) {
+      if (!e.target.matches('.dropdownButtonFull')) {
+        var dropdowns = document.getElementsByClassName("dropdownContent");
+        for (var d = 0; d < dropdowns.length; d++) {
+          var openDropdown = dropdowns[d];
+          if (openDropdown.classList.contains('active')) {
+            openDropdown.classList.remove('active');
+          }
+        }
+      }
+    });
+
+    document.querySelectorAll('.dropdownButtonFull').forEach(function(dropdown) {
+      dropdown.addEventListener('click', function() {
+        var dropdownContent = this.nextElementSibling;
+        dropdownContent.classList.toggle('active');
+      });
+    });
+  </script>
+  <script>
+    // Function to update timestamps
+    function updateTimestamps() {
+      // Get all elements with the class "timestamp"
+      var timestamps = document.querySelectorAll('.timestamp');
+  
+      // Loop through each timestamp element
+      timestamps.forEach(function(timestamp) {
+        // Get the specific time to calculate the difference from (for example, you can use a date string or timestamp)
+        var specificTime = new Date('2024-05-15T21:19:00Z');
+  
+        // Calculate the time difference
+        var currentTime = new Date();
+        var timeDifference = currentTime - specificTime;
+  
+        // Convert the time difference to a human-readable format (e.g., seconds, minutes, hours, days)
+        var timeAgo = calculateTimeAgo(timeDifference);
+  
+        // Update the timestamp element's text content
+        timestamp.textContent = 'Last updated • ' + timeAgo + ' ago';
+      });
+    }
+  
+    // Function to calculate time difference in a human-readable format
+    function calculateTimeAgo(milliseconds) {
+      var seconds = Math.floor(milliseconds / 1000);
+      var minutes = Math.floor(seconds / 60);
+      var hours = Math.floor(minutes / 60);
+      var days = Math.floor(hours / 24);
+  
+      if (days > 0) {
+        return days + ' days';
+      } else if (hours > 0) {
+        return hours + ' hours';
+      } else if (minutes > 0) {
+        return minutes + ' minutes';
+      } else {
+        return seconds + ' seconds';
+      }
+    }
+  
+    // Call the updateTimestamps function to initially update timestamps
+    updateTimestamps();
+  
+    // Optionally, you can set up a timer to periodically update timestamps
+    setInterval(updateTimestamps, 600); // Update every minute (adjust as needed)
+  </script>
+    
+<div class="content">
+
+</div>
+
+</html>

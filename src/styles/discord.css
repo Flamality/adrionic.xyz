@@ -1,0 +1,75 @@
+.discordInvite {
+    width: 400px;
+    height: 80px;
+    background-color: var(--card);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    cursor: default;
+    user-select: none;
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .discordInvite img {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    border-radius: 15px;
+    pointer-events: none;
+  }
+  .discordInvite a {
+    margin-right: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #248046;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+  }
+  .discordInvite a:hover {
+    background-color: #1a6334;
+  }
+  .inviteCenter {
+    margin: auto;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .inviteCenter h1 {
+    font-size: 15px;
+    margin-bottom: 0;
+    transform: translateY(3px);
+  }
+  .inviteCenter p {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+    transform: translateY(-3px);
+    font-size: 16px;
+  }
+  .bulletGreen {
+    color: #23A559;
+    font-size: 35px;
+    vertical-align: middle;
+    letter-spacing: 2px;
+  }
+  .bulletGray {
+    color: #80848E;
+    font-size: 35px;
+    vertical-align: middle;
+    letter-spacing: 2px;
+  }
+  .discordMembers {
+    margin-top: 0px;
+    display: flex;
+    font-size: 10px;
+    margin: auto;
+  }
+  .online_member_count, .discord_member_count {
+    color:white;
+    vertical-align: middle;
+  }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onic Club - Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/discord.css">
+    
+    <link rel="icon" type="image/png" href="adrionicPFP.jpg">
+</head>
+<body>
+
+<nav>
+    <a href="/home">Home</a>
+    <a href="/youtube">Youtube</a>
+    <a href="/discord">Discord</a>
+    <a href="/socials">Socials</a>
+</nav>
+
+<h1 class="discordTitle" id="discordTitle">ONIC CLUB</h1>
+
+<hr class="titleSplit">
+
+<div class="center">
+    <div class="discordInvite">
+        <img src="adrionicPFP.jpg" class="discordIcon">
+        <div class="inviteCenter">
+            <h1 class="inviteTitle">Onic Club</h1>
+            <div class="discordMembers">
+                <p class="discordMemberCount"><span class="bulletGreen">&bull;</span><span class="online_member_count">000 Online</span></p>
+                <p class="discordMemberCount"><span class="bulletGray">&bull;</span><span class="discord_member_count">000 Members</span></p>
+            </div>
+        </div>
+        <a href="https://discord.gg/9pdugyWmJy" class="discordJoinButton">Join</a>
+    </div>
+</div>
+<script>
+    // Fetching data from the Discord API
+    fetch('https://discord.com/api/invites/9pdugyWmJy?with_counts=true')
+      .then(response => response.json())
+      .then(data => {
+        // Extracting the approximate member count and online member count
+        const totalMembers = data.approximate_member_count;
+        const onlineMembers = data.approximate_presence_count; // This provides the number of online members
+        
+        // Updating the HTML span elements with the member counts
+        const totalMemberCountElement = document.querySelector('.discord_member_count');
+        totalMemberCountElement.textContent = `${totalMembers} Members`;
+
+        const onlineMemberCountElement = document.querySelector('.online_member_count');
+        onlineMemberCountElement.textContent = `${onlineMembers} Online`;
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+        const totalMemberCountElement = document.querySelector('.discord_member_count');
+        totalMemberCountElement.textContent = '000 Members';
+
+        const onlineMemberCountElement = document.querySelector('.online_member_count');
+        onlineMemberCountElement.textContent = '000 Online';
+      });
+</script>
+<div class="section">
+    <h2>What is Onic Club?</h2>
+    <P>Onic Club stands as the vibrant heart of the Adrionic community, serving as the official Discord server where enthusiasts, gamers, and fans alike converge to connect, collaborate, and celebrate all things Adrionic. Boasting a dynamic membership of over 250 individuals and counting, our server pulses with energy and enthusiasm, fueled by an active staff team dedicated to ensuring a positive and welcoming environment for all. Here, you'll find more than just a server – you'll discover a tight-knit community of like-minded individuals united by their passion for gaming, creativity, and camaraderie. Whether you're seeking new friends, engaging discussions, or exciting events, Onic Club offers an unparalleled experience that's as enjoyable as it is enriching. Join us today and become part of something truly special!</P>
+    <h2>Onic Club features and activites</h2>
+    <p>We pride ourselves on offering a diverse array of features and activities designed to enhance your experience and foster a sense of community. Our calendar is filled with exciting events, including Onic Club Game Nights, where members come together for epic gaming sessions, laughter, and friendly competition. Additionally, we try to regularly host giveaways when we can, providing our members with the chance to win exclusive prizes and rewards.</p>
+    <p>But that's not all! Our innovative level system rewards active participation and engagement within the community. As you contribute and interact with fellow members, you'll progress through various ranks, unlocking perks and privileges along the way. It's our way of recognizing and celebrating your dedication to Onic Club.</p>
+    <p>Furthermore, we believe in giving our members a voice. Through polls, you have the opportunity to shape the direction of Onic Club, influencing decisions on upcoming events, server improvements, and more. Your feedback matters, and we're committed to ensuring that your voice is heard.</p>
+    <p>Need assistance or have questions about Adrionic or the Discord server? Our dedicated support system is here to help. Whether you're encountering technical issues, seeking advice, or simply want to connect with a friendly face, our team is ready to assist you every step of the way.</p>
+    <p>At Onic Club, there's something for everyone. Join us today and become part of a vibrant and welcoming community where fun, friendship, and support are always on the agenda.</p>
+    <h2>How to join?</h2>
+      <p>You can join by scrolling up to the invite embed above! Before you join make sure to read the rules by using the buttons below, you can also find other useful links below.</p>
+</div>
+<button onclick="window.location.href = '/discord/rules';">RULES</button>
+<button onclick="window.location.href = '/discord/staff';">STAFF</button>
+
+<footer>
+    <div class="footerSocials">
+        <a href="/link/youtube">
+          <img src="ytWhite.png">
+        </a>
+        <a href="/link/discord">
+          <img src="dcWhite.png">
+        </a>
+        <a href="/link/tiktok">
+          <img src="tiktok.png">
+        </a>
+        <a href="/link/instagram">
+          <img src="instagram.png">
+        </a>
+        <a href="/link/twitter">
+          <img src="x.png">
+        </a>
+        <a href="/link/facebook">
+          <img src="facebook.png">
+        </a>
+    </div>
+  </footer>
+<div class="feedback-text">
+  <p>Want to improve this site? Submit feedback <a href="/feedback">here</a></p>
+</div>
+</body>
+</html>
