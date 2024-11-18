@@ -401,3 +401,72 @@ code:hover {
     font-size: 0.8em;
   }
 }
+
+.corner-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--accent-dark-gray);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Modern shadow effect */
+  overflow: hidden; /* Ensures no content spills out */
+  width: 320px; /* Fixed width for consistent design */
+  max-width: 90%; /* Adapts to smaller screens */
+  z-index: 10;
+  animation: fadeIn 0.3s ease-out; /* Smooth appearance */
+}
+
+.corner-popup h1 {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  padding: 16px;
+  background-color: var(--adrian-blue); /* Header background color */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+  font-weight: 600;
+}
+
+.corner-popup p {
+  color: #d1d1d1; /* Softer white for contrast */
+  font-size: 16px;
+  padding: 16px;
+  margin: 0;
+  line-height: 1.5; /* Improves readability */
+}
+
+.corner-popup button {
+  background-color: var(--adrian-blue);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 16px;
+  margin-right: 5px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.corner-popup button:hover {
+  background-color: var(
+    --adrian-blue-light
+  ); /* Slightly brighter hover color */
+  transform: scale(1.05); /* Adds a hover pop effect */
+}
+
+/* Styling for the close button */
+.corner-popup #closeCornerButton {
+  margin-left: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slide-in effect */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
